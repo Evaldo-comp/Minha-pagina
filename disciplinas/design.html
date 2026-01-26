@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Design de Interface e Usabilidade - Portal de Disciplinas</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        .breadcrumb {
+
+            margin-bottom: 1.5rem;
+
+            font-size: 0.9rem;
+
+        }
+
+
+
+        .breadcrumb a {
+
+            color: var(--accent);
+
+            text-decoration: none;
+
+            transition: color 0.2s ease;
+
+        }
+
+
+
+        .breadcrumb a:hover {
+
+            color: var(--accent-soft);
+
+        }
+
+
+
+        .month-section {
+
+            margin-bottom: 2rem;
+
+            padding: 1.5rem;
+
+            background: rgba(56, 189, 248, 0.05);
+
+            border-left: 4px solid var(--accent);
+
+            border-radius: 0.5rem;
+
+        }
+
+
+
+        .month-section h3 {
+
+            color: var(--accent);
+
+            margin-bottom: 1rem;
+
+            font-size: 1.3rem;
+
+        }
+
+
+
+        .weeks-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 1rem;
+
+        }
+
+
+
+        .week-content li a {
+
+            color: var(--accent);
+
+            text-decoration: none;
+
+            transition: all 0.2s ease;
+
+        }
+
+
+
+        .week-content li a:hover {
+
+            color: var(--accent-soft);
+
+            text-decoration: underline;
+
+        }
+
+
+
+        .week-card {
+
+            background: var(--bg-card);
+
+            border: 1px solid rgba(148, 163, 184, 0.3);
+
+            border-radius: 0.5rem;
+
+            padding: 1rem;
+
+            transition: all 0.2s ease;
+
+        }
+
+
+
+        .week-card:hover {
+
+            border-color: var(--accent);
+
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.1);
+
+        }
+
+
+
+        .week-card h4 {
+
+            color: var(--accent);
+
+            margin-bottom: 0.75rem;
+
+            font-size: 1.1rem;
+
+        }
+
+
+
+        .week-content {
+
+            color: var(--muted);
+
+            font-size: 0.9rem;
+
+            line-height: 1.6;
+
+        }
+
+
+
+        .week-content ul {
+
+            list-style: none;
+
+            margin-top: 0.75rem;
+
+        }
+
+
+
+        .week-content li {
+
+            padding: 0.4rem 0;
+
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+
+        }
+
+
+
+        .week-content li:last-child {
+
+            border-bottom: none;
+
+        }
+
+
+
+        .week-content li::before {
+
+            
+
+            color: var(--accent-soft);
+
+            margin-right: 0.5rem;
+
+        }
+
+
+
+        .add-content-btn {
+
+            display: inline-block;
+
+            margin-top: 0.75rem;
+
+            padding: 0.4rem 0.8rem;
+
+            background: rgba(56, 189, 248, 0.2);
+
+            border: 1px solid var(--accent);
+
+            color: var(--accent);
+
+            border-radius: 0.3rem;
+
+            cursor: pointer;
+
+            font-size: 0.85rem;
+
+            transition: all 0.2s ease;
+
+            text-decoration: none;
+
+        }
+
+
+
+        .add-content-btn:hover {
+
+            background: rgba(56, 189, 248, 0.3);
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <h1>Design de Interface e Usabilidade</h1>
+
+        <p>Materiais, conteúdos e atividades organizados por semana</p>
+
+        <img class="logo-curso" src="../img/05.jpg" alt="Logo do Curso">
+
+        <img class="logo-escola" src="../img/mcvm-logo.png" alt="Logo da escola">
+
+    </header>
+
+
+
+    <div class="breadcrumb" style="margin-top: 1.5rem; max-width: 1100px; margin-left: auto; margin-right: auto; padding: 0 1rem;">
+
+        <a href="../index.html">Voltar</a>
+
+    </div>
+
+
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 0 1rem;">
+
+        <!-- MÊS 1 -->
+
+        <section class="month-section">
+
+            <h3>Fevereiro</h3>
+
+            <div class="weeks-grid">
+
+                <!-- Semana 1 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 1</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                       
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 2 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 2</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+                        
+                        <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                       
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 3 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 3</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 4 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 4</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MâÅ S 2 -->
+
+        <section class="month-section">
+
+            <h3>Março</h3>
+
+            <div class="weeks-grid">
+
+                <!-- Semana 5 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 5</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 6 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 6</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 7 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 7</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 8 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 8</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MâÅ S 3 -->
+
+        <section class="month-section">
+
+            <h3>Abril</h3>
+
+            <div class="weeks-grid">
+
+                <!-- Semana 9 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 9</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 10 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 10</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 11 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 11</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+                       
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 12 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 12</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MâÅ S 4 -->
+
+        <section class="month-section">
+
+            <h3>Maio</h3>
+
+            <div class="weeks-grid">
+
+                <!-- Semana 13 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 13</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+                      
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 14 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 14</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+                       
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 15 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 15</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+                       
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 16 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 16</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MâÅ S 5 -->
+
+        <section class="month-section">
+
+            <h3>Junho</h3>
+
+            <div class="weeks-grid">
+
+                <!-- Semana 17 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 17</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 18 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 18</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 19 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 19</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                          <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Semana 20 -->
+
+                <div class="week-card">
+
+                    <h4>Semana 20</h4>
+
+                    <div class="week-content">
+
+                        <p><strong>Tópicos:</strong></p>
+
+                         <ul>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                            <li><a href="#">Conteudo a ser adicionado</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        Atualizado semanalmente · última atualização: 25/01/2026
+
+    </footer>
+
+</body>
+
+
+
+</html>
+
+
+
